@@ -3,28 +3,11 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
-      ],
+      text: '主页',
+      href: '/',
     },
     {
-      text: 'Pages',
+      text: '解决方案',
       links: [
         {
           text: 'Features (Anchor Link)',
@@ -57,7 +40,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Landing',
+      text: '产品服务',
       links: [
         {
           text: 'Lead Generation',
@@ -86,7 +69,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: '关于我们',
       links: [
         {
           text: 'Blog List',
@@ -109,10 +92,6 @@ export const headerData = {
           href: getPermalink('astro', 'tag'),
         },
       ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
     },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
