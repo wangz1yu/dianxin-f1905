@@ -33,7 +33,7 @@ i18n:
 
 apps:
   blog:
-    isEnabled: flase
+    isEnabled: true
     postsPerPage: 6
 
     post:
