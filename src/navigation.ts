@@ -7,18 +7,14 @@ export const headerData = {
       href: '/',
     },
     {
-      text: '解决方案',
+      text: '产品服务',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
+          text: '灵工签约系统',
           href: getPermalink('/services'),
         },
         {
-          text: 'Pricing',
+          text: '税优服务商',
           href: getPermalink('/pricing'),
         },
         {
@@ -40,30 +36,30 @@ export const headerData = {
       ],
     },
     {
-      text: '产品服务',
+      text: '解决方案',
       links: [
         {
-          text: 'Lead Generation',
+          text: '物流配送',
           href: getPermalink('/landing/lead-generation'),
         },
         {
-          text: 'Long-form Sales',
+          text: '零售餐饮',
           href: getPermalink('/landing/sales'),
         },
         {
-          text: 'Click-Through',
+          text: '互联网科技',
           href: getPermalink('/landing/click-through'),
         },
         {
-          text: 'Product Details (or Services)',
+          text: '金融保险',
           href: getPermalink('/landing/product'),
         },
         {
-          text: 'Coming Soon or Pre-Launch',
+          text: '医疗健康',
           href: getPermalink('/landing/pre-launch'),
         },
         {
-          text: 'Subscription',
+          text: '建筑工程',
           href: getPermalink('/landing/subscription'),
         },
       ],
@@ -94,15 +90,15 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: '合作洽谈', href: 'https://work.weixin.qq.com/ca/cawcde6d443537b621', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: '操作系统',
       links: [
-        { text: 'Features', href: '#' },
+        { text: '点薪·结算系统', href: 'https://www.dianxingg.cn/' },
         { text: 'Security', href: '#' },
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
