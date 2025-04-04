@@ -5,7 +5,7 @@ import Hero2 from '~/components/widgets/Hero2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pre-Launch Landing Page',
+  title: '医疗健康解决方案',
 };
 ---
 
@@ -13,29 +13,15 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Pre-launch Demo"
-    title="Pre-launch Landing Page: Build the Hype Before the Big Reveal!"
-    subtitle="Craft a tantalizing Coming Soon or Pre-Launch Landing Page that leaves visitors eagerly awaiting your launch."
+    tagline="点薪云·医疗健康"
+    title="助力医疗服务高效运营与合规升级"
+    subtitle="为医疗机构、体检中心、康养机构等提供灵活用工体系，实现“弹性、合规、降本”协同价值"
     actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
+      { variant: 'primary', text: '获取解决方案', href: 'https://work.weixin.qq.com/ca/cawcde6d443537b621', icon: 'tabler:square-rounded-arrow-right' },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1558803116-c1b4ac867b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
       alt: 'Store with a Coming Soon sign. Pre-launch Landing Page',
     }}
-  />
-
-  <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
-      },
-    ]}
   />
 </Layout>
