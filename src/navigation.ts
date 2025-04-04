@@ -18,20 +18,8 @@ export const headerData = {
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: '智能结算系统',
+          href: getPermalink('https://www.dianxingg.cn'),
         },
       ],
     },
@@ -68,24 +56,12 @@ export const headerData = {
       text: '关于我们',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
+          text: '关于我们',
+          href: getPermalink('/about'),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: '联系我们',
+          href: getPermalink('/contact'),
         },
       ],
     },
