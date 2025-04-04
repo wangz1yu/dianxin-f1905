@@ -56,7 +56,7 @@ export const headerData = {
       text: '关于我们',
       links: [
         {
-          text: '关于我们',
+          text: '关于点薪',
           href: getPermalink('/about'),
         },
         {
