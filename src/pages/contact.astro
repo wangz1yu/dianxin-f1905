@@ -5,73 +5,46 @@ import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: '联系我们',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
-
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
-
+  <HeroText tagline="联系我们" title="我们期待与您达成合作" />
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="全方位支撑您的业务！"
     items={[
       {
-        title: 'General support',
+        title: '业务支撑',
         description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
       },
       {
-        title: 'Contact sales',
+        title: '商务洽谈',
         description:
           'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
       },
       {
-        title: 'Technical support',
+        title: '技术支撑',
         description:
           'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
       },
       {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+        title: '电话',
+        description: '191-1359-2345',
         icon: 'tabler:headset',
       },
       {
-        title: 'Email',
-        description: 'contact@support.com',
+        title: '邮件',
+        description: 'bd@dianxin.love',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: '地址',
+        description: '安徽省合肥市蜀山区望江西路123号1303室',
         icon: 'tabler:map-pin',
       },
     ]}
