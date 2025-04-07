@@ -1,5 +1,5 @@
 ---
-title: 'Terms and Conditions'
+title: '点薪云·系统公告'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
