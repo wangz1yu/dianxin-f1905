@@ -337,7 +337,7 @@ const metadata = {
   <div id="bottom-banner" class="bottom-banner-container">
     <div class="bottom-banner-content">
       <h2 class="bottom-banner-title">获取您的专属解决方案</h2>
-      <button class="bottom-banner-button" onclick="redirectToLink()">立即获取</button>
+      <a href="https://work.weixin.qq.com/ca/cawcde6d443537b621" class="bottom-banner-button">免费获取</a>
     </div>
     <button class="bottom-banner-close">&times;</button>
   </div>
@@ -382,6 +382,7 @@ const metadata = {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-decoration: none; /* 确保没有下划线 */
   }
 
   .bottom-banner-button:hover {
@@ -419,10 +420,5 @@ const metadata = {
       });
     }
   });
-
-  // 跳转到链接的函数
-  function redirectToLink() {
-    window.location.href = 'https://work.weixin.qq.com/ca/cawcde6d443537b621'; // 替换为你的目标链接
-  }
 </script>
 </Layout>
