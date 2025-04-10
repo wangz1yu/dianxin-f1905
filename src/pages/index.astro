@@ -333,4 +333,82 @@ const metadata = {
       191-1359-2345 | 7x12小时专家支持
     </Fragment>
   </CallToAction>
+
+  <!-- Banner Widget ****************** -->
+  <div class="banner-container">
+    <div class="banner-content">
+      <h2 class="banner-title">新用户注册即可赠送8万免费额度</h2>
+      <button class="banner-button">免费使用</button>
+    </div>
+    <button class="banner-close">&times;</button>
+  </div>
+</Layout>
+
+<style>
+  /* 横幅容器样式 */
+  .banner-container {
+    background-color: #e8f7f2;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  /* 横幅内容样式 */
+  .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* 横幅标题样式 */
+  .banner-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* 横幅按钮样式 */
+  .banner-button {
+    background-color: #00c292;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .banner-button:hover {
+    background-color: #00a878;
+  }
+
+  /* 关闭按钮样式 */
+  .banner-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+  }
+</style>
+
+<script>
+  // 关闭横幅的逻辑
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.querySelector('.banner-container');
+    const closeBtn = document.querySelector('.banner-close');
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        banner.style.display = 'none';
+      });
+    }
+  });
+</script>
 </Layout>
