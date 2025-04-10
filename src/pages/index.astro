@@ -335,34 +335,38 @@ const metadata = {
   </CallToAction>
 
   <!-- Banner Widget ****************** -->
-  <div class="banner-container">
-    <div class="banner-content">
-      <h2 class="banner-title">新用户注册即可赠送8万免费额度</h2>
-      <button class="banner-button">免费使用</button>
+  <div id="bottom-banner" class="bottom-banner-container">
+    <div class="bottom-banner-content">
+      <h2 class="bottom-banner-title">新用户注册即可赠送8万免费额度</h2>
+      <button class="bottom-banner-button">免费使用</button>
     </div>
-    <button class="banner-close">&times;</button>
+    <button class="bottom-banner-close">&times;</button>
   </div>
 </Layout>
 
 <style>
   /* 横幅容器样式 */
-  .banner-container {
+  .bottom-banner-container {
     background-color: #e8f7f2;
     padding: 20px 0;
     text-align: center;
-    position: relative;
-    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
   }
 
   /* 横幅内容样式 */
-  .banner-content {
+  .bottom-banner-content {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
 
   /* 横幅标题样式 */
-  .banner-title {
+  .bottom-banner-title {
     font-size: 24px;
     font-weight: bold;
     color: #333;
@@ -370,7 +374,7 @@ const metadata = {
   }
 
   /* 横幅按钮样式 */
-  .banner-button {
+  .bottom-banner-button {
     background-color: #00c292;
     color: white;
     border: none;
@@ -381,12 +385,12 @@ const metadata = {
     transition: background-color 0.3s;
   }
 
-  .banner-button:hover {
+  .bottom-banner-button:hover {
     background-color: #00a878;
   }
 
   /* 关闭按钮样式 */
-  .banner-close {
+  .bottom-banner-close {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -399,11 +403,17 @@ const metadata = {
 </style>
 
 <script>
-  // 关闭横幅的逻辑
+  // 显示横幅的逻辑
   document.addEventListener('DOMContentLoaded', () => {
-    const banner = document.querySelector('.banner-container');
-    const closeBtn = document.querySelector('.banner-close');
+    const banner = document.getElementById('bottom-banner');
+    const closeBtn = document.querySelector('.bottom-banner-close');
 
+    // 显示横幅
+    setTimeout(() => {
+      banner.style.display = 'block';
+    }, 3000); // 3秒后显示横幅
+
+    // 关闭横幅
     if (closeBtn) {
       closeBtn.addEventListener('click', () => {
         banner.style.display = 'none';
