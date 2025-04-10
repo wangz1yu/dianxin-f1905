@@ -333,12 +333,11 @@ const metadata = {
       191-1359-2345 | 7x12小时专家支持
     </Fragment>
   </CallToAction>
-
   <!-- Banner Widget ****************** -->
   <div id="bottom-banner" class="bottom-banner-container">
     <div class="bottom-banner-content">
-      <h2 class="bottom-banner-title">新用户注册即可赠送8万免费额度</h2>
-      <button class="bottom-banner-button">免费使用</button>
+      <h2 class="bottom-banner-title">获取您的专属解决方案</h2>
+      <button class="bottom-banner-button" onclick="redirectToLink()">立即获取</button>
     </div>
     <button class="bottom-banner-close">&times;</button>
   </div>
@@ -420,5 +419,10 @@ const metadata = {
       });
     }
   });
+
+  // 跳转到链接的函数
+  function redirectToLink() {
+    window.location.href = 'https://work.weixin.qq.com/ca/cawcde6d443537b621'; // 替换为你的目标链接
+  }
 </script>
 </Layout>
